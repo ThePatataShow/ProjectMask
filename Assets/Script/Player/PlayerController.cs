@@ -8,22 +8,11 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField][Range(1, 20)] private float speed = 10.0f;
     [SerializeField][Range(1, 360)] private float rotationSpeed = 180.0f;
-    [SerializeField][Range(1, 30)] private float jumpForce = 10.0f;
-    [SerializeField][Range(0, 20)] private float slideVelocity = 7;
-    [SerializeField][Range(-20, 0)] private float slopeForceDown = -10;
-
-    private float fallVelocity;
-    private Vector2 input;
 
     private void Start()
     {
         player = GetComponent<CharacterController>();
         playerInput = GetComponent<PlayerInput>();
-    }
-
-    private void Update()
-    {
-        
     }
 
     private void FixedUpdate()
