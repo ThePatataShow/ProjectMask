@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
     public void Comenzar()
     {
           Debug.Log("Sali");
-          SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +  1);
+          SceneManager.LoadScene("level1");
     }
 
    public void Salir()
